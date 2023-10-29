@@ -2,6 +2,7 @@ package com.gerimedica.csvuploader.csv;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
  * CsvMedicalData is a POJO class that represents the CSV file data.
  */
 @Data
+@Builder
 public class MedicalDataDto implements CsvData {
 
     @CsvBindByName

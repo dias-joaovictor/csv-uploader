@@ -42,8 +42,7 @@ public class MedicalDataServiceImpl implements MedicalDataService {
 
     @Override
     public MedicalDataResponseWrapper findById(String code) {
-        medicalDataRepository.getReferenceById(code);
-        if(StringUtils.isBlank(code)) {
+        if (StringUtils.isBlank(code)) {
             return MedicalDataResponseWrapper.builder()
                     .medicalData(List.of())
                     .size(0)
