@@ -1,4 +1,4 @@
-package com.gerimedica.csvuploader;
+package com.gerimedica.csvuploader.converter;
 
 import com.gerimedica.csvuploader.csv.MedicalDataDto;
 import com.gerimedica.csvuploader.entity.MedicalData;
