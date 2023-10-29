@@ -1,6 +1,6 @@
 package com.gerimedica.csvuploader.service;
 
-import com.gerimedica.csvuploader.MedicalDataConverter;
+import com.gerimedica.csvuploader.converter.MedicalDataConverter;
 import com.gerimedica.csvuploader.csv.MedicalDataDto;
 import com.gerimedica.csvuploader.csv.MedicalDataResponseWrapper;
 import com.gerimedica.csvuploader.repository.MedicalDataRepository;
