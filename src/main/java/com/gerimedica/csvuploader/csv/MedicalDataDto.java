@@ -2,8 +2,10 @@ package com.gerimedica.csvuploader.csv;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
@@ -12,6 +14,8 @@ import java.time.LocalDate;
  */
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class MedicalDataDto implements CsvData {
 
     @CsvBindByName
