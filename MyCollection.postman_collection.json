@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "f3a405d5-2c3a-460c-84c7-d7d7b96ee230",
+    "name": "MyCollection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5846499"
+  },
+  "item": [
+    {
+      "name": "Upload Data",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/Users/joao.dias/Downloads/exercise.csv"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/medical-data",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "medical-data"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete all",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "localhost:8080/medical-data",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "medical-data"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Fetch all",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "localhost:8080/medical-data",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "medical-data"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Fetch by Code",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "localhost:8080/medical-data/by-code/:code",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "medical-data",
+            "by-code",
+            ":code"
+          ],
+          "variable": [
+            {
+              "key": "code",
+              "value": "276885007"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
